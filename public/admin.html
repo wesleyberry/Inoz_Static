@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/calendar.css">
+    <title>Ino'z Brew and Chew - Admin</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <h1>Ino'z Admin</h1>
+        </div>
+        <button type="submit" id="logout" class="btn btn-danger" style="margin-top: 20px; margin-bottom: 20px;">Logout</button>
+        <!-- Hours CRUD -->
+        <div class="row" id="adminHours">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Hours</h2>
+                        <select class="custom-select-1">
+                            <option value="1">Summer</option>
+                            <option value="2">Winter</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <h2>Is the restaurant open on Tuesdays?</h2>
+                        <select class="custom-select-2">
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Specials CRUD -->
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="row" id="adminSpecials">
+                <div class="col-12">
+                    <h2>Specials</h2>
+                    <h4>**THERE MUST BE 7 OR 0 SPECIALS FOR EACH TYPE**</h4>
+                    <h4>**SPECIALS MUST BE ENTERED IN ORDER, STARTING WITH MONDAY**</h4>
+                    <form>
+                        <div class="row justify-content-center rowSpecial">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Day of the Week</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</option>
+                                    <option value="Thursday">Thursday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center rowSpecial">
+                            <label for="specialInput">Special</label>
+                            <input type="text" class="form-control" id="specialInput" aria-describedby="specialHelp" placeholder="Enter special">
+                        </div>
+                        <div class="row justify-content-center rowSpecial">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Type</label>
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                        <option value="Bar">Bar</option>
+                                        <option value="Food">Food</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Submit" id="submitSpecial">
+                    </form>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">D.O.W.</th>
+                            <th scope="col">Special</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="specialsGoHere">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bands CRUD -->
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="row" id="adminBands">
+                <div class="col-12">
+                    <h2>Bands</h2>
+                    <form>
+                        <div class="row justify-content-center">
+                            <label for="bandName">Band Name</label>
+                            <input type="text" class="form-control" id="bandName" aria-describedby="specialHelp" placeholder="Enter band">
+                        </div>
+                        <div class="row justify-content-center">
+                            <label for="year">Year</label>
+                            <input type="text" class="form-control" id="year" aria-describedby="specialHelp" placeholder="Enter year">
+                        </div>
+                        <div class="row justify-content-center">
+                            <label for="day">Day Number</label>
+                            <input type="text" class="form-control" id="day" aria-describedby="specialHelp" placeholder="Enter day">
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="form-group">
+                                <label for="month">Month</label>
+                                <select class="form-control" id="month">
+                                    <option value="0">January</option>
+                                    <option value="1">February</option>
+                                    <option value="2">March</option>
+                                    <option value="3">April</option>
+                                    <option value="4">May</option>
+                                    <option value="5">June</option>
+                                    <option value="6">July</option>
+                                    <option value="7">August</option>
+                                    <option value="8">September</option>
+                                    <option value="9">October</option>
+                                    <option value="10">November</option>
+                                    <option value="11">December</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center rowSpecial">
+                                <div class="form-group">
+                                    <label for="time">Time</label>
+                                    <select class="form-control" id="time">
+                                        <option value="12 16">12:00 PM - 4:00 PM</option>
+                                        <option value="18 22">6:00 PM - 10:00 PM</option>
+                                        <option value="19 22">7:00 PM - 10:00 PM</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Submit" id="submitBand">
+                    </form>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">Band</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bandsGoHere">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/login.js"></script>
+    <script src="./assets/scripts/calendar/events.js"></script>
+    <script src="./assets/scripts/calendar/calendar.js"></script>
+    <script src="./assets/scripts/update_dom/hours.js"></script>
+    <script src="./assets/scripts/update_dom/bands.js"></script>
+    <script src="./assets/scripts/update_dom/specials.js"></script>
+</body>
+</html>
