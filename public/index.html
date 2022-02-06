@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148282282-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-148282282-1');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,8 +14,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/calendar.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/styles/calendar.css"> -->
     <title>Ino'z Brew and Chew | Wimberley, TX 78676</title>
     
 </head>
@@ -58,7 +49,7 @@
     </nav>
     <!-- Landing Page -->
     <div id="landingPage">
-        <img data-src='./assets/images/Logo3.png' alt="Ino'z Logo" id="landingPageLogo" class="lazyload">
+        <img src='./assets/images/Logo2.png' alt="Ino'z Logo" id="landingPageLogo" class="">
         <div class="dot">
             <a class="navAnchor" href="#about">
                 <i class="fa fa-arrow-circle-down" id="downArrow"></i>
@@ -70,13 +61,13 @@
         <div class="row justify-content-center">
             <h1 class="headers" id="aboutHeader"><u>About Ino'z</u></h1>
         </div>
-        <div class="aboutBackground lazyload" data-bgset="./assets/images/Boards_3.jpg">
+        <div class="aboutBackground" style="background-image: url('./assets/images/Boards_3.jpg')">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 aboutText" id="aboutText1">
                     <p class="whiteP">Ino'z is your go to restaurant for great priced all American food with a few twists!! We are open 7 days a week for lunch and dinner. We cater to everyone whether your looking for a relaxing outdoor environment on our patio, a view of Cypress Creek from our indoor sunroom, or more of a sports vibe in our main dining area with our 4 TVs and bar. </p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 aboutImageContainer">
-                    <div class="aboutImages lazyload" id="firstAboutImage" data-bgset="/assets/images/Entire_View.jpg">
+                    <div class="aboutImages " id="firstAboutImage" style="background-image: url('./assets/images/Entire_View.jpg')">
 
                     </div>
                 </div>
@@ -86,7 +77,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 aboutImageContainer">
-                    <div class="aboutImages lazyload" id="secondAboutImage" data-bgset="/assets/images/Service_With_A_Smile.jpg">
+                    <div class="aboutImages " id="secondAboutImage" style="background-image: url('./assets/images/Service_With_A_Smile.jpg')">
 
                     </div>
                 </div>
@@ -95,7 +86,7 @@
                     <p class="whiteP">The staff sees each other as well as our customers as family, working hard every day to deliver the best experience possible!!  </p>
                 </div>
                 <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 aboutImageContainer">
-                    <div class="aboutImages lazyload" id="thirdAboutImage" data-bgset="/assets/images/Kenny_And_Mr_T.jpg">
+                    <div class="aboutImages " id="thirdAboutImage" style="background-image: url('./assets/images/Kenny_And_Mr_T.jpg')">
 
                     </div>
                 </div>
@@ -109,16 +100,16 @@
         </div>
         <div id="kitchenBackground">
             <div class="row" style="display: flex; justify-content: center;">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
-                    <img src="assets/images/menu_1.jpg" alt="First Page of Menu" class="menu_images">
+                <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
+                    <img src="./assets/images/menu_1.jpg" alt="First Page of Menu" class="menu_images">
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
-                    <img src="assets/images/menu_2.jpg" alt="First Page of Menu" class="menu_images">
+                    <img src="./assets/images/menu_2.jpg" alt="First Page of Menu" class="menu_images">
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
-                    <img src="assets/images/menu_3.jpg" alt="First Page of Menu" class="menu_images">
-                </div>
-                <!-- <div class="col-lg-3 col-xl-3">
+                    <img src="./assets/images/menu_3.jpg" alt="First Page of Menu" class="menu_images">
+                </div> -->
+                <div class="col-lg-3 col-xl-3">
                     <h2>Appetizers</h2>
                     
                         <p>Wings over Wimberley</p>
@@ -173,21 +164,21 @@
                         <p>Chicken Tenders</p>
                         <p>Chicken Fried Steak or Chicken</p>
                     
-                </div> -->
-            <!-- </div> -->
-            <!-- <div class="row" style="display: flex; justify-content: center;"> -->
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
-                    <img src="assets/images/menu_4.jpg" alt="First Page of Menu" class="menu_images">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
-                    <img src="assets/images/menu_5.jpg" alt="First Page of Menu" class="menu_images">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
-                    <img src="assets/images/menu_6.jpg" alt="First Page of Menu" class="menu_images">
                 </div>
             </div>
+            <!-- <div class="row" style="display: flex; justify-content: center;">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
+                    <img src="./assets/images/menu_4.jpg" alt="First Page of Menu" class="menu_images">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
+                    <img src="./assets/images/menu_5.jpg" alt="First Page of Menu" class="menu_images">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
+                    <img src="./assets/images/menu_6.jpg" alt="First Page of Menu" class="menu_images">
+                </div>
+            </div> -->
             <div class="row QBS">
-                <!-- <div class="col-lg-4 col-xl-4">
+                <div class="col-lg-4 col-xl-4">
                     <h2>Quesadillas, Spuds, and Such</h2>
                     
                         <p>Quesadillas</p>
@@ -228,10 +219,10 @@
                             
                         <p>Chef Salad</p>
                     
-                </div> -->
+                </div>
             </div>
             <div class="row">
-                <!-- <div class="col-lg-3 col-xl-3 aboutText sidesAndDressings">
+                <div class="col-lg-3 col-xl-3 aboutText sidesAndDressings">
                     <p>
                         <strong>Entrees, Burgers, Wraps,</strong> and <strong>Sandwiches</strong> are served with a choice of Fries, Sweet Potato Fries, or a small Garden/Caesar Salad.
                         Substitute handmade Onion Things for an additional 2.00
@@ -262,7 +253,7 @@
                     <p>
                         Dressings: Ranch, Honey Mustard, Blue Cheese, Feta Greek, Italian, FF Ranch, 1000 Island, Balsamic Vinaigrette, Caesar.
                     </p>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -278,7 +269,7 @@
         </div>
     </div>
     <!-- Bar -->
-    <!-- <div class="container-fluid" id="bar">
+    <div class="container-fluid" id="bar">
         <div class="row justify-content-center whiteRow">
             <h1 class="headers" id="barHeader"><u>Bar</u></h1>
         </div>
@@ -306,7 +297,7 @@
                 <br>
             </div>
             <div class="col-xs-0 col-md-0 col-lg-4 d-flex align-items-center justify-content-center">
-                <div class="brewImage lazyload" data-bgset="./assets/images/Taps.jpg"></div>
+                <div class="brewImage " style="background-image: url('./assets/images/Taps.jpg')"></div>
             </div>
         </div>
         <div class="row justify-content-center whiteRow">
@@ -342,8 +333,8 @@
                 
             </div>
             <div class="col-xs-0 col-md-0 col-lg-4">
-                <img data-src='./assets/images/Mextini_2.jpg' alt="Mextini" class="spiritImages lazyload">
-                <img data-src='./assets/images/Bullfrog.jpg' alt="Blanco Bullfrog" class="spiritImages lazyload" id="bullfrog">
+                <img src='./assets/images/Mextini_2.jpg' alt="Mextini" class="spiritImages ">
+                <img src='./assets/images/Bullfrog.jpg' alt="Blanco Bullfrog" class="spiritImages " id="bullfrog">
             </div>
         </div>
         <div class="row justify-content-center">
@@ -366,32 +357,32 @@
                 <p>Becker Iconoclast Fascination</p>
             </div>
             <div class="col-xs-0 col-md-0 col-lg-4 d-flex align-items-center justify-content-center">
-                <div class="lazyload wineImages" data-bgset="./assets/images/wine.jpg">
+                <div class=" wineImages" style="background-image: url('./assets/images/wine.jpg')">
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Live Music -->
     <div class="container-fluid" id="liveMusic">
         <div class="row justify-content-center whiteRow">
             <h1 class="headers"><u>Live Music</u></h1>
         </div>
-        <div class="row justify-content-center wood lazyload" data-bgset="/assets/images/Boards_3.jpg">
+        <div class="row justify-content-center wood " style="background-image: url('./assets/images/Boards_3.jpg')">
             <div class="col-xs-12 col-md-12 col-lg-8 col-xl-8 liveMusicText">
                 <h3>We offer live music on the stage overlooking our outdoor patio during the summer months.</h3>
                 <h3>And remember... we NEVER charge a cover!</h3>
                 <h4>**ALL SHOWS WEATHER PERMITTING - SUBJECT TO CHANGE WITHOUT NOTICE**</h4>
             </div>
             <div class="col-xs-12 col-md-12 col-lg-4 col-xl-4 aboutImageContainer">
-                <div class="aboutImages lazyload" id="musicImage" data-bgset="./assets/images/live_band.jpg">
+                <div class="aboutImages " id="musicImage" style="background-image: url('./assets/images/live_band.jpg')">
 
                 </div>
             </div> 
         </div>
-        <div class="row justify-content-center" style="background-color: rgb(233, 233, 233);">
+        <!-- <div class="row justify-content-center" style="background-color: rgb(233, 233, 233);">
             <h2 style="margin-bottom: 10px;">Band Schedule</h2>
-        </div>
-        <div class="row wood lazyload" data-bgset="/assets/images/Boards_3.jpg">
+        </div> -->
+        <div class="row wood " style="background-image: url('./assets/images/Boards_3.jpg')">
             <div id='wrap'>
                 <div id='calendar'></div>
                 <div style='clear:both'></div>
@@ -405,17 +396,17 @@
             </div>
         </div>
         <div class="row bandsRow">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer lazyload">
-                <div class="bandsImages lazyload" id="band1" data-bgset='/assets/images/bands_2.jpg'></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer ">
+                <div class="bandsImages " id="band1" style="background-image: url('./assets/images/bands_2.jpg')"></div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer lazyload">
-                <div class="bandsImages lazyload" id="band2" data-bgset='/assets/images/bands_1.jpg'></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer ">
+                <div class="bandsImages " id="band2" style="background-image: url('./assets/images/bands_1.jpg')"></div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer lazyload">
-                <div class="bandsImages lazyload" id="band3" data-bgset='/assets/images/bands_3.jpg'></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer ">
+                <div class="bandsImages " id="band3" style="background-image: url('./assets/images/bands_3.jpg')"></div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer lazyload">
-                <div class="bandsImages lazyload" id="band4" data-bgset='/assets/images/bands_4.jpg'></div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 aboutImageContainer ">
+                <div class="bandsImages " id="band4" style="background-image: url('./assets/images/bands_4.jpg')"></div>
             </div>
         </div>
     </div>
@@ -429,8 +420,8 @@
                 <h2 style="margin-bottom: 30px;">Find us</h2>
                 <p>14004 Ranch Rd 12, Wimberley, TX, 78676</p>
                 <p>(512)-847-6060</p>
-                <p style="font-size: 5rem"><a href="https://www.facebook.com/Inozwimberley/?__tn__=%2Cd%2CP-R&eid=ARDXw74a4kaCY7c1-MdJyk61yvpzoejfhIJF39y0MQsLCyzbcR7LF5KKh9sSJ8XlfXYd-zV1EvISwhlv" target="_blank" class="fa fa-facebook"></a></p>
-                <p style="font-size: 5rem"><a href="https://www.instagram.com/inozbrewandchew/?hl=en" target="_blank" class="fa fa-instagram"></a></p>
+                <p style="font-size: 5rem"><a href="https://www.facebook.com/Chillsonthecreek" target="_blank" class="fa fa-facebook"></a></p>
+                <p style="font-size: 5rem"><a href="https://www.instagram.com/chillsonthecreekwimberley/" target="_blank" class="fa fa-instagram"></a></p>
                 <p style="font-size: 5rem"><a href="tel:512-847-6060" class="fa fa-phone"></a></p>
             </div>
             <div class="col-xs-6 col-md-6 col-lg-3 hours" id="hoursGoHere">
@@ -444,16 +435,13 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/lazysizes@4.0.1/lazysizes.js"></script>
-    <script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
-    <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/scripts/app.js"></script>
-    <script src="./assets/scripts/calendar/events.js"></script>
-    <script src="./assets/scripts/calendar/calendar.js"></script>
+    <!-- <script src="./assets/scripts/calendar/events.js"></script> -->
+    <!-- <script src="./assets/scripts/calendar/calendar.js"></script> -->
     <script src="./assets/scripts/update_dom/hours.js"></script>
     <script src="./assets/scripts/update_dom/specials.js"></script>
+    <!-- <script src="./assets/scripts/update_dom/bands.js"></script> -->
     <script src="./assets/scripts/map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBknTCSv1mo9c7YL2F4yRfILunjsL2YoY&callback=initMap"></script>
 </body>
 </html>
